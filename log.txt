@@ -1,0 +1,135 @@
+Fri Sep 26 2025 11:27:39 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 11:27:39 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:57:51 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:57:51 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:58:24 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:58:24 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 14:59:09 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:00:17 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:00:17 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:00:17 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:04:43 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:04:43 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:04:43 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:06:20 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:06:20 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:06:21 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:08:26 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:09:09 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:12:55 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:12:55 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:15:21 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:15:21 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:22:47 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:47 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:51 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:22:51 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:22:51 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:51 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:51 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:55 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:55 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:22:55 GMT-0300 (Brasilia Standard Time) --- result is not defined
+Fri Sep 26 2025 15:24:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:24:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:25:00 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:25:00 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:26:24 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:26:24 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:26:45 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 15:27:54 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:27:54 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 15:27:54 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:55:31 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:55:31 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:56:40 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:56:46 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:56:46 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:56:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:56:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:58:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:58:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:58:03 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:58:03 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:58:12 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:58:12 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:59:29 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:59:29 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Fri Sep 26 2025 17:59:29 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Fri Sep 26 2025 17:59:42 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:09:00 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:10:27 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:10:27 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:10:27 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:11:29 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:11:29 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:11:29 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:12:08 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:13:22 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:20:25 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:34:31 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:35:08 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:36:15 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:37:50 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:37:50 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:37:50 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:40:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:40:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:40:03 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 18:40:17 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:40:17 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 18:40:17 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:09:10 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:09:10 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:09:10 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:10:18 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:10:18 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:10:18 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:10:46 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:10:46 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:10:47 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:11:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:11:03 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:11:03 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:13:00 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:13:00 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:13:00 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:13:41 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:13:41 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:14:01 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:14:01 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:14:01 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:19:50 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:19:50 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:19:50 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:22:37 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:22:37 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:23:10 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:23:10 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:23:10 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:23:38 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:24:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:24:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:24:53 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:24:53 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:24:53 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:25:24 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:25:24 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:25:28 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:26:48 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:27:20 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:27:20 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:27:20 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:27:20 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:27:37 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:27:37 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:28:32 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:28:46 GMT-0300 (Brasilia Standard Time) --- username_requester not found
+Sat Sep 27 2025 19:28:53 GMT-0300 (Brasilia Standard Time) --- Username already exists
+Sat Sep 27 2025 19:28:59 GMT-0300 (Brasilia Standard Time) --- Some user in this connection is blocked
+Sat Sep 27 2025 19:29:21 GMT-0300 (Brasilia Standard Time) --- username_requester not found
