@@ -1,78 +1,147 @@
+import http from 'http';
+import path from 'path';
+import express from 'express';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import { openConnection, closeConnection } from "./src/database/db.js";
-import { User } from "./src/classes/User.js";
-import { Connection } from "./src/classes/Connection.js";
-import { Message } from "./src/classes/Message.js";
-import { Logger } from "./src/classes/Logger.js";
+import { User } from './src/classes/User.js';
+import { Message } from './src/classes/Message.js';
+import cookieParser from 'cookie-parser';
+import { Connection } from './src/classes/Connection.js';
+import { ObjectId } from 'mongodb';
 
-// Start Database Connection
 openConnection();
+let app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+app.set('view engine', 'hbs')
+app.set('views', path.join(__dirname, 'src/view'))
+app.use(express.static(path.join(__dirname, 'src/public')))
+app.use(express.urlencoded({extended:false}))
+app.use(cookieParser());
+app.use(express.json());
 
 let user = new User("Teste3", "teste");
-let user2 = new User("Teste2", "teste");
-
-//This method adds the user to the database
-await user.createAccount();
-await user2.createAccount();
-
-//This method validate whether the builded object has the same name/password stored in the database
-//If so it returns the _id (used as a session)
 let idUser = await user.login();
-
-//This will create the connection if it doesn't exist
-await Connection.createNewConnection(idUser, "Teste2")
-
 await Message.sendNewMessage(idUser, "Teste2", "Mensagem que será marcada para deleção");
-await Message.sendNewMessage(idUser, "Teste2", "Mensagem que será realmente deletada");
-await Message.sendNewMessage(idUser, "Teste2", "Mensagem que será editada");
 
-//This method will return only the messages which the user hasn't marked as deleted
-//The message is still in the database but won't be returned to the user 
-let messageList = await Message.returnMessageList(idUser)
+app.listen(3001)
 
-console.log(messageList)
+app.get('/', async (req, res) => {
+
+    let userID = req.cookies.userID;
+    if(!userID){
+        res.redirect('/login');
+    }
+    let username = await User.convertIdToUsername(userID);
+    if(!username){
+        res.clearCookie('userID')
+        res.redirect('/login');
+    }
+    let posts = await Message.returnMessageList(userID);
+
+    let contatos = await Connection.listUserConnections(userID);
+    let contatosModificado = [];
+
+    let contatoUsername;
+    contatos.forEach(contato => {
+        if(contato.username1 === username){
+            contatoUsername = contato.username2;
+        }else contatoUsername = contato.username1;
+
+        contatosModificado.push({
+            contato: contatoUsername,
+            status: contato.status,
+        })
+    })
+
+    res.render('home', {posts, contatos: contatosModificado, my_username:username});
+})
+
+app.post('/new-connection', async(req, res) =>{
+    const username = req.body.username;
+    await Connection.createNewConnection(req.cookies.userID, username);
+    res.redirect('/');
+})
+
+app.get('/login', async (req,res) =>{
+    let userID = req.cookies.userID;
+    if(userID){
+        res.redirect('/');
+    }
+    else res.render('login');
+})
+
+app.post('/send-messsage', async(req, res) =>{
+
+    const reciever = req.body.contact;
+    const message = req.body.message;
+    const id = req.cookies.userID;
+    
+    if(message){
+        await Message.sendNewMessage(id, reciever, message);
+    }
+
+    res.redirect('/');
+})
+
+app.post('/login', async (req, res) =>{
+    const data = req.body;
+    const username = data.username;
+    const password = data.password;
+
+    const loginUser = new User(username, password);
+    const idUser = await loginUser.login();
+    if(idUser){
+        res.cookie('userID', idUser, { maxAge: 6 * 24 * 60 * 60 * 1000, httpOnly: true })
+        res.redirect('/')
+    }else{
+        res.redirect('/login')
+    }
+})
 
 
-//I'm using fixed indexes (you SHOULD NOT do that)
-//This WILL MESS UP the order if the DB is not clean 
-let edited_message = messageList[0];
-if(messageList.length !== 0){
-    //This method will set the message flag as deleted by the respective user inside the database
-    //This WILL NOT REMOVE THE message from the database
-    await messageList[2].markMessageAsDeleted(idUser);
+app.get('/signup', async (req, res) =>{
+    res.render('signup')
+})
 
-    //This method will delete the message from the database
-    //This method SHOULD NEVER BE USED
-    //It only exists to meet the teacher's criteria
-    await messageList[1].deleteMessage(messageList[1].id)
+app.post('/signup', async (req, res) =>{
+    const data = req.body;
+    const username = data.username;
+    const password = data.password;
 
-    //This method will update the message in the database
-    await messageList[0].updateMessage("Mensagem editada com sucesso") 
-}
+    const loginUser = new User(username, password);
+    await loginUser.createAccount();
+    let idUser = await loginUser.login();
 
-messageList = await Message.returnMessageList(idUser)
-await edited_message.deleteMessage(edited_message.id)
-console.log("\n\n Após deleção \n\n")
-console.log(messageList)
+    if(idUser){
+        res.cookie('userID', idUser, { maxAge: 6 * 24 * 60 * 60 * 1000, httpOnly: true })
+        res.redirect('/')
+    }else{
+        res.redirect('login');
+    }
+})
 
+app.post('/delete', async (req, res) => {
+    Message.markMessageAsDeleted(req.cookies.userID, req.body.message_id);
+});
 
-//Block the connection (disallow message sending from one user to another)
-//Both users can block the connection if any of them blocked it the message won't be send.
+app.post('/block', async (req, res) => {
 
-await Connection.blockConnection(idUser, "Teste2");
-await Message.sendNewMessage(idUser, "Teste2", "Essa mensagem não será enviada (conexão bloqueada)");
-
-//Unblock the connection (allow message sending from one user to another)
-//Both users must have unblocked it.
-await Connection.unblockConnection(idUser, "Teste2")
-await Message.sendNewMessage(idUser, "Teste2", "Essa mensagem será enviada (conexão desbloqueada)")
-
-messageList = await Message.returnMessageList(idUser)
-
-console.log("\n\n Mensagens após o bloqueio/desbloqueio: \n\n", messageList)
-
-//delete a user, their connections and messages (recieve/sent).
-User.deleteUser(idUser)
-
-// Call closeConnection() for Crtl+C
-process.on('SIGINT', closeConnection);
-process.on('SIGTERM', closeConnection);
+    
+    try{
+        let username = await User.convertIdToUsername(req.cookies.userID);
+        let blockOrUnblock = await Connection.blockOrUnblock(username,req.body.username_blocked);
+        
+        console.log(blockOrUnblock);
+        if(blockOrUnblock === 'block'){
+            await Connection.blockConnection(req.cookies.userID, req.body.username_blocked);
+        }else{
+            await Connection.unblockConnection(req.cookies.userID, req.body.username_blocked);
+        }
+    }catch(e){
+        console.log(e)
+    }
+    res.redirect('/')
+})

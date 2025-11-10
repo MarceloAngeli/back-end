@@ -32,9 +32,11 @@ export class User {
         username: this.username,
         password: this.password,
       });
+      return true;
     }catch(e){
       Logger.logError(e);
     }
+    return false;
   }
 
   static async deleteUser(_id){

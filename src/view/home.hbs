@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="home.js"></script>
+    <title>WhatsClone</title>
+</head>
+    <body data-my_username="{{my_username}}">
+        <form method="post" action="/send-messsage">
+            <select name="contact">
+                {{#contatos}}
+                    <option value="{{contato}}" data-status="{{status}}">{{contato}}</option>
+                {{/contatos}}
+            </select>
+            <input type="text" id="send-message-input" name="message">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <ul>
+            {{#posts}}
+                <li data-send_by="{{send_by}}" data-username1="{{username1}}"
+                 data-username2="{{username2}}">{{payload}}<i data-id="{{id}}"
+                  class="material-icons">delete</i></li>
+            {{/posts}}
+        </ul>
+
+        <form method="post" action="/new-connection">
+            <label for="username">Adicionar novo contato:</label>
+            <input type="text" name="username">
+            <button type="submit">Send</button>
+        </form>
+
+        <div>
+            <button id="block">Bloquear/Desbloquar Usuário</button>
+            <p>Você não pode enviar mais mensagens pois ou você ou o contato clicou no botão bloquear</p>
+        <div>
+    </body>
+</html>

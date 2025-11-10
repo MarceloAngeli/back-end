@@ -17,26 +17,30 @@ export class Message{
         this.created_at = created_at;
     }
 
-    async markMessageAsDeleted(id_deleter){
+    static async markMessageAsDeleted(id_deleter, _id){
         let username_deleter = await User.convertIdToUsername(id_deleter);
 
+        let message = await client.db().collection('message').findOne({
+            _id: new ObjectId(_id)
+        });
+
         // check who is deleting (username 1 or username 2)
-        if(this.username1 === username_deleter){
+        if(message.username1 === username_deleter){
             //update the field "deleted_by_username1" with TRUE
             await client.db().collection('message').updateOne(
                 {
-                    _id: this.id
+                    _id: new ObjectId(_id)
                 },{
                     $set: {deleted_by_username1: true}
                 }
             )
         }
 
-        if(this.username2 === username_deleter){
+        if(message.username2 === username_deleter){
             //update the field "deleted_by_username2" with TRUE
             await client.db().collection('message').updateOne(
                 {
-                    _id: this.id
+                    _id: new ObjectId(_id)
                 },{
                     $set: {deleted_by_username2: true}
                 }

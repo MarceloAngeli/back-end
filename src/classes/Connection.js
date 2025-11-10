@@ -171,5 +171,45 @@ export class Connection {
                 }
             ]
         })
+
+        
+    }
+
+    static async blockOrUnblock(username_blocker, username_target){
+
+        let result = await client.db().collection('connection').findOne(
+            {$or: [{
+                username1: username_blocker,
+                username2: username_target
+            },{
+                username1: username_blocker,
+                username2: username_target,
+            }
+            ]}   
+        )
+
+        console.log(result.status);
+
+        if(username_blocker == result.username1 && (result.status == 1 || result.status == 3)){
+            return 'unblock';
+        }
+
+        if(username_blocker == result.username1 && (result.status == 2 || result.status == 3)){
+            return 'block';
+        }
+        return 'block';
+    }
+
+    static async listUserConnections(_id){
+        let username = await User.convertIdToUsername(_id);
+        let result = await client.db().collection('connection').find(
+            {$or: [{
+                username1: username,
+            },{
+                username2: username,
+            }
+            ]}   
+        ).toArray();
+        return result;
     }
 }
