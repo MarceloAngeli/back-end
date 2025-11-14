@@ -10,19 +10,20 @@ const status = Object.freeze({
 export class Connection {
     
     static async createNewConnection(id_username1, username2) {
-        try{
             //get the username from its id
             let username1 = await User.convertIdToUsername(id_username1);
             if(!username1) throw new Error("Invalid username_id");
 
-            //verify if destiny user exists
-            if(!User.userExists(username2)) throw new Error("Destiny user does not exist")
-
             if(!username2) throw new Error("The user you are searching for does not exist");
+
+            //verify if destiny user exists
+            let user2exists = await User.userExists(username2);
+            console.log(user2exists)
+            if(!user2exists) throw new Error("Usuário encontrado")
 
             //verify if connection already exists
             if (await this.connectionAlreadyExists(username1, username2)){
-                throw new Error("Connection already exists");
+                throw new Error("Conexão já existe");
             }
 
             //create the connection
@@ -31,9 +32,6 @@ export class Connection {
                 username2,
                 status: 0
             });
-        }catch(e){
-            console.log(e.message)
-        }
             
     }
 
@@ -45,8 +43,8 @@ export class Connection {
                 username1: username_unblocker,
                 username2: unblocker_target
             },{
-                username1: username_unblocker,
-                username2: unblocker_target,
+                username1: unblocker_target,
+                username2: username_unblocker
             }
             ]}   
         )
@@ -182,22 +180,33 @@ export class Connection {
                 username1: username_blocker,
                 username2: username_target
             },{
-                username1: username_blocker,
-                username2: username_target,
+                username1: username_target,
+                username2: username_blocker
             }
             ]}   
         )
+        
+        if(result.status == 0){
+            return 'block';
+        }
 
-        console.log(result.status);
-
-        if(username_blocker == result.username1 && (result.status == 1 || result.status == 3)){
+        if(username_blocker == result.username1 && result.status == 1){
             return 'unblock';
         }
 
-        if(username_blocker == result.username1 && (result.status == 2 || result.status == 3)){
+        if(username_blocker == result.username2 && result.status == 1){
             return 'block';
         }
-        return 'block';
+
+        if(username_blocker == result.username1 && result.status == 2){
+            return 'block';
+        }
+
+        if(username_blocker == result.username2 && result.status == 2){
+            return 'unblock';
+        }
+
+        return 'unblock';
     }
 
     static async listUserConnections(_id){

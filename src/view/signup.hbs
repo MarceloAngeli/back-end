@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <title>WhatsClone</title>
+    <style>
+        .error-message {
+            color: red;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid red;
+            background-color: #ffeaea;
+        }
+    </style>
 </head>
     <body>
             <p>Signup</p>
+
+            {{#if error}}
+                <p class="error-message">{{error}}</p>
+            {{/if}}
+
             <form method="post" action="/signup">
                 <label for="username">Username</label>
                 <input type="text" name="username">

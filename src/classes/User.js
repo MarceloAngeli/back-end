@@ -59,6 +59,7 @@ export class User {
       return result._id.toHexString();
     }catch(e){
       Logger.logError(e);
+      return null;
     }
   } 
 
@@ -99,6 +100,7 @@ export class User {
       let result = await client.db().collection('user').findOne({
         username
       });
+      console.log(result);
 
       if(!result) return false;
       return true;

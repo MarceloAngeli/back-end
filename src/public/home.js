@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mySelect = document.querySelector('select');
     const username = document.querySelector('body').dataset.my_username;
-    const block_phrase = document.querySelector('p');
+    const block_phrase = document.querySelector('#block-message');
     block_phrase.style.visibility = 'hidden';
    
     //Create an empty option
